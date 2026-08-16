@@ -1,0 +1,37 @@
+{
+    "event": {
+        "id": "01CQDWN6HZQZ1RFXJZQWXM1G0Y",
+        "event_type": "incident.triggered",
+        "resource_type": "incident",
+        "occurred_at": "2026-09-22T21:00:00.000Z",
+        "data": {
+            "id": "Q2DGVPTAGDY34J",
+            "type": "incident",
+            "html_url": "https://example.pagerduty.com/incidents/Q2DGVPTAGDY34J",
+            "number": 1842,
+            "status": "triggered",
+            "urgency": "high",
+            "title": "Elevated payment.succeeded volume with customer charge complaints",
+            "created_at": "2026-09-22T21:00:00Z",
+            "service": {
+                "id": "PSERVICE123",
+                "summary": "acme-checkout-prod",
+                "type": "service_reference",
+                "html_url": "https://example.pagerduty.com/services/PSERVICE123"
+            },
+            "priority": {
+                "id": "P2",
+                "summary": "P2",
+                "type": "priority_reference"
+            },
+            "assignees": [
+                {
+                    "id": "PUSER001",
+                    "summary": "On-call Engineer",
+                    "type": "user_reference",
+                    "html_url": "https://example.pagerduty.com/users/PUSER001"
+                }
+            ]
+        }
+    }
+}
