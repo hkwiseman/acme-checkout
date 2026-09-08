@@ -44,7 +44,6 @@ export async function capture_payment(args: {
             order_id: request.order_id,
             amount_cents: request.amount_cents,
             currency: request.currency,
-            idempotency_key: request.idempotency_key,
         }),
     );
 
