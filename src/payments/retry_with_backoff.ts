@@ -15,11 +15,7 @@ export async function retryWithBackoff<T>(
         } catch (error) {
             last_error = error;
             if (attempt === options.max_attempts) break;
-            // Exponential growth with full jitter. Without the jitter every pod
-            // that saw the same processor blip retries on the same schedule and
-            // the recovery attempt becomes a second outage.
-            const ceiling = options.base_delay_ms * 2 ** (attempt - 1);
-            await sleep(Math.random() * ceiling);
+            await sleep(options.base_delay_ms);
         }
     }
 
